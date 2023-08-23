@@ -1,1 +1,17 @@
 /* Add your own CSS code below */
+.countries {
+    columns: 1;
+  }
+  
+  @media (min-width: 769px) {
+    .countries {
+      columns: 2;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .countries {
+      columns: 3;
+    }
+  }
+  
