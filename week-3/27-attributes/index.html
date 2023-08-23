@@ -66,7 +66,24 @@
                 <label for="delivery-address-city">City</label>
                 <input type="text" name="delivery-address-city" id="delivery-address-city" required />
               </p>
-              
+              <p>
+                <label for="delivery-country">Country</label>
+                <input type="text" name="delivery-country" id="delivery-country" value="United Kingdom" readonly />
+              </p>
+              <p>
+                <label>Delivery Options</label>
+                <label>
+                  <input
+                    type="radio"
+                    name="delivery-option"
+                    id="delivery-option"
+                    value="standard"
+                    checked
+                    disabled
+                  />
+                  Royal Mail
+                </label>
+              </p>
             </fieldset>
 
             <button type="submit">Complete Purchase</button>
