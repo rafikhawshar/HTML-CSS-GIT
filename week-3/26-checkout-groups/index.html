@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
   </head>
-
   <body>
     <div class="site-wrapper">
       <main>
@@ -33,12 +32,23 @@
             </tr>
           </table>
         </div>
-
         <div class="checkout">
           <h2 class="checkout__title">Checkout</h2>
           <form method="GET" id="checkout-form" class="checkout__form">
-            <!-- Add the form fields here -->
-
+            <div class="fieldset-label">Billing Address</div>
+            <fieldset>
+              <input type="text" name="billing_address_line1" placeholder="Address Line 1" />
+              <input type="text" name="billing_address_line2" placeholder="Address Line 2" />
+              <input type="text" name="billing_postcode" placeholder="Postcode" />
+              <input type="text" name="billing_city" placeholder="City" />
+            </fieldset>
+            <div class="fieldset-label">Delivery Address</div>
+            <fieldset>
+              <input type="text" name="delivery_address_line1" placeholder="Address Line 1" />
+              <input type="text" name="delivery_address_line2" placeholder="Address Line 2" />
+              <input type="text" name="delivery_postcode" placeholder="Postcode" />
+              <input type="text" name="delivery_city" placeholder="City" />
+            </fieldset>
             <button type="submit">Complete Purchase</button>
           </form>
         </div>
